@@ -10,9 +10,25 @@ class Persons extends Component {
   render() {
     return (
       <div>
-        <Input name='name' placeholder='Name' onChange={(e) => this.props.onAddName(e.target.value)} />
-        <Input name='age' placeholder='Age' onChange={(e) => this.props.onAddAge(e.target.value)} />
-        <AddPerson personAdded={() => this.props.onAddPerson({ name: this.props.name, age: this.props.age })} />
+        <Input
+          name='name'
+          placeholder='Name'
+          value={this.props.name}
+          onChange={(e) => this.props.onAddName(e.target.value)}
+          autoFocus={true}
+        />
+        <Input
+          name='age'
+          placeholder='Age'
+          value={this.props.age}
+          onChange={(e) => this.props.onAddAge(e.target.value)}
+        />
+        <AddPerson
+          personAdded={() => {
+            this.props.onAddPerson({ name: this.props.name, age: this.props.age });
+            this.props.onInputClear();
+          }}
+        />
         {(this.props.persons || []).map((person) => (
           <Person
             key={person.id}
@@ -41,7 +57,8 @@ const mapDispatchToProps = (dispatch) => {
     onAddPerson: (person) => dispatch({ type: actionType.ADD_PERSON, value: person }),
     onRemovePerson: (person) => dispatch({ type: actionType.REM_PERSON, value: person }),
     onAddName: (name) => dispatch({ type: actionType.ADD_NAME, value: name }),
-    onAddAge: (age) => dispatch({ type: actionType.ADD_AGE, value: age })
+    onAddAge: (age) => dispatch({ type: actionType.ADD_AGE, value: age }),
+    onInputClear: () => dispatch({ type: actionType.CLEAR })
   };
 };
 

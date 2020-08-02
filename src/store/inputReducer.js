@@ -17,6 +17,12 @@ const rootReducer = (state = initializeState, action) => {
         ...state,
         age: action.value
       };
+    case actionType.CLEAR:
+      return {
+        ...state,
+        name: '',
+        age: ''
+      };
     default:
       return state;
   }
