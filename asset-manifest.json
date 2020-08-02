@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/redux-person-exercise/static/css/main.d14221ff.chunk.css",
+    "main.js": "/redux-person-exercise/static/js/main.ba0b9f02.chunk.js",
+    "main.js.map": "/redux-person-exercise/static/js/main.ba0b9f02.chunk.js.map",
+    "runtime-main.js": "/redux-person-exercise/static/js/runtime-main.9683cd03.js",
+    "runtime-main.js.map": "/redux-person-exercise/static/js/runtime-main.9683cd03.js.map",
+    "static/js/2.7d29a664.chunk.js": "/redux-person-exercise/static/js/2.7d29a664.chunk.js",
+    "static/js/2.7d29a664.chunk.js.map": "/redux-person-exercise/static/js/2.7d29a664.chunk.js.map",
+    "index.html": "/redux-person-exercise/index.html",
+    "precache-manifest.b55d3c2453772fb730ebc9f8e00d8a61.js": "/redux-person-exercise/precache-manifest.b55d3c2453772fb730ebc9f8e00d8a61.js",
+    "service-worker.js": "/redux-person-exercise/service-worker.js",
+    "static/css/main.d14221ff.chunk.css.map": "/redux-person-exercise/static/css/main.d14221ff.chunk.css.map",
+    "static/js/2.7d29a664.chunk.js.LICENSE.txt": "/redux-person-exercise/static/js/2.7d29a664.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9683cd03.js",
+    "static/js/2.7d29a664.chunk.js",
+    "static/css/main.d14221ff.chunk.css",
+    "static/js/main.ba0b9f02.chunk.js"
+  ]
+}
